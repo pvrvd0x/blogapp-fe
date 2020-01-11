@@ -1,0 +1,54 @@
+.like {
+  border: 0;
+  background-color: #181a1b;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  padding: 12px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: -5%;
+  color: #ffffff;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color .4s ease;
+  cursor: pointer;
+  $this: &;
+
+  &:hover {
+    background-color: #5c6061;
+
+    #{$this}__icon {
+      transform: scale(1.1)
+    }
+  }
+  
+  &:active {
+    #{$this}__icon {
+      animation: pop .6s ease both alternate;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    transition: transform .4s ease;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(.5)
+  }
+
+  50% {
+    transform: scale(1.5)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}

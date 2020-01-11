@@ -13,8 +13,8 @@ const Slide = ({
             <div className="slide__content">
                 <h1 className="slide__title">{slide.title}</h1>
                 <div className="slide__content-info">
-                    <div className="slide__pub-date">{slide.date}</div>
-                    <div className="slide__author">{slide.author}</div>
+                    <div className="slide__pub-date">{slide.date.toUpperCase()}</div>
+                    <div className="slide__author">{slide.author.toUpperCase()}</div>
                 </div>
             </div>
         </div>

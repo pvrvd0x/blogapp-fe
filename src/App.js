@@ -7,7 +7,7 @@ import './assets/styles/index.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Switch>
         <Route path={'/article'} component={Article}/>
         <Route path={'/'} component={Home}/>
