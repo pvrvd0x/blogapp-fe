@@ -1,4 +1,11 @@
 @import "fonts";
+@import "animations";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
 
 .container {
   max-width: 1280px;

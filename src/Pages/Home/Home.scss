@@ -22,6 +22,11 @@
   }
 
   &-grid {
+    display: flex;
+    justify-content: center;
 
+    &-masonry {
+      width: 1150px;
+    }
   }
 }

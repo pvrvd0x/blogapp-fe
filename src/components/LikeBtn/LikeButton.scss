@@ -25,10 +25,12 @@
       transform: scale(1.1)
     }
   }
-  
-  &:active {
+
+  &--liked {
+    background-color: tomato !important;
+
     #{$this}__icon {
-      animation: pop .6s ease both alternate;
+      animation: pop .3s linear;
     }
   }
 
@@ -36,19 +38,5 @@
     width: 25px;
     height: 25px;
     transition: transform .4s ease;
-  }
-}
-
-@keyframes pop {
-  0% {
-    transform: scale(.5)
-  }
-
-  50% {
-    transform: scale(1.5)
-  }
-
-  100% {
-    transform: scale(1)
   }
 }

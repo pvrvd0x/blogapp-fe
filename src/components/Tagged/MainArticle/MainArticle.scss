@@ -1,0 +1,26 @@
+.tagged-article {
+  margin-top: 80px;
+  width: 850px;
+  position: relative;
+
+  &-image {
+    max-height: 400px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__like {
+    $this: &;
+
+    &--liked {
+      background-color: #5c6061;
+
+      #{$this}__icon {
+        animation: pop .3s linear;
+      }
+    }
+  }
+}

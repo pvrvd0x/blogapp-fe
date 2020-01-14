@@ -12,11 +12,15 @@ import './Article.scss';
 const Article = ({
     article
 }) => {
+    const [isLiked, setIsLiked] = React.useState(false);
+
+    const handleLike = () => setIsLiked(!isLiked);
+
     return (
         <div className='article'>
             <div className='article-preview'>
                 <Image image={article.previewImage}/>
-                <LikeButton numOfLikes={12}/>
+                <LikeButton numOfLikes={12} handleClick={handleLike} classes={isLiked ? 'like--liked' : ''}/>
             </div>
             <div className='article-description'>
                 <div className='article__tags'>

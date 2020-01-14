@@ -1,6 +1,8 @@
 import React from 'react';
+import Masonry from 'react-masonry-component';
 
-import { SliderComponent, Article } from 'components';
+import { SliderComponent, Article, Tagged } from 'components';
+import { LoadMoreButton } from 'containers';
 
 import './Home.scss';
 
@@ -35,7 +37,8 @@ const Home = () => {
                     <span className='home-heading__subtitle'>Most Recent Posts</span>
                 </section>
                 <section className='home-grid'>
-                    <Article article={{
+                    <Masonry className='home-grid-masonry'>
+                        <Article article={{
                         previewImage: 'https://source.unsplash.com/random',
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
@@ -56,8 +59,137 @@ const Home = () => {
                             link: 'https://pinterest.com'
                         }]
                     }}/>
+                        <Article article={{
+                        previewImage: 'https://upload.wikimedia.org/wikipedia/commons/5/57/ECurtis.jpg',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                        <Article article={{
+                        previewImage: 'https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                        <Article article={{
+                        previewImage: 'https://images.unsplash.com/photo-1525629179084-f7a7c04f50f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                        <Article article={{
+                        previewImage: 'https://icdn2.digitaltrends.com/image/digitaltrends/google-pixel-xl-issues.jpg',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                        <Article article={{
+                        previewImage: 'https://source.unsplash.com/random',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                        <Article article={{
+                        previewImage: 'https://source.unsplash.com/random',
+                        tags: ['Trending'],
+                        title: 'Check Out The Most Awesome VR Headset in 2020',
+                        text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                        author: 'Jane Smith',
+                        pubdate: 'November 7, 2019',
+                        socials: [{
+                            name: 'twitter',
+                            link: 'https://twitter.com',
+                        }, {
+                            name: 'facebook',
+                            link: 'https://facebook.com',
+                        }, {
+                            name: 'dribble',
+                            link: 'https://dribble.com',
+                        }, {
+                            name: 'pinterest',
+                            link: 'https://pinterest.com'
+                        }]
+                    }}/>
+                    </Masonry>
                 </section>
+                <LoadMoreButton/>
             </section>
+            <Tagged/>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import classname from 'classnames';
 
 import './LikeButton.scss';
 import Like from 'assets/icons/heart.svg'
@@ -6,10 +7,11 @@ import Like from 'assets/icons/heart.svg'
 
 const LikeButton = ({
     handleClick,
-    numOfLikes
+    numOfLikes,
+    classes
 }) => {
     return (
-        <button className='like' onClick={handleClick}>
+        <button className={classname('like', classes)} onClick={handleClick}>
             <img src={Like} className='like__icon' alt='like'/>
             <span className='like-counter'>
                 {numOfLikes}

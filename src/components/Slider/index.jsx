@@ -15,7 +15,7 @@ const SliderComponent = ({
             <Slider
                 hasArrows
                 ArrowComponent={Arrow}>
-                {slides.map((slide, index) => console.log(slide) || <Slide key={index} slide={slide}/>)}
+                {slides.map((slide, index) => <Slide key={index} slide={slide}/>)}
             </Slider>
         </div>
     );

@@ -1,0 +1,24 @@
+.tagged-title {
+  position: relative;
+
+  &__heading {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__subheading {
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .7);
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    left: 65%;
+    color: tomato;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', serif;
+  }
+}

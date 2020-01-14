@@ -9,9 +9,11 @@ const Image = ({
     styles,
     classes
 }) => {
+    const imageClasses = [classes].map(classname => `${classname}__img`);
+
     return (
         <div className={classname('image', classes)} style={styles}>
-            <img className={classname('image__img', classes)} src={image} alt='Article'/>
+            <img className={classname('image__img', imageClasses)} src={image} alt='Article'/>
         </div>
     );
 };
