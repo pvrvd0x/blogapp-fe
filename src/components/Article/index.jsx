@@ -33,7 +33,7 @@ const Article = ({
                     {article.text}
                 </p>
                 <div className='article__info'>
-                    <span className='article__author'>{article.author}</span>
+                    <span className='article__author'>{article.author.name}</span>
                     <div className='dash'/>
                     <span className='article__pubdate'>{article.pubdate}</span>
                 </div>

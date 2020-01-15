@@ -43,7 +43,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -64,7 +67,9 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'},
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -85,7 +90,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -106,7 +114,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -127,7 +138,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -148,7 +162,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -169,7 +186,10 @@ const Home = () => {
                         tags: ['Trending'],
                         title: 'Check Out The Most Awesome VR Headset in 2020',
                         text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
-                        author: 'Jane Smith',
+                        author: {
+                            name: 'Jane Smith',
+                            avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        },
                         pubdate: 'November 7, 2019',
                         socials: [{
                             name: 'twitter',
@@ -189,7 +209,30 @@ const Home = () => {
                 </section>
                 <LoadMoreButton/>
             </section>
-            <Tagged/>
+            <Tagged article={{
+                previewImage: 'https://source.unsplash.com/random',
+                tags: ['Technology'],
+                title: 'Check Out The Most Awesome VR Headset in 2020',
+                text: 'I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...',
+                author: {
+                    name: 'Jane Smith',
+                    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+                },
+                pubdate: 'November 7, 2019',
+                socials: [{
+                    name: 'twitter',
+                    link: 'https://twitter.com',
+                }, {
+                    name: 'facebook',
+                    link: 'https://facebook.com',
+                }, {
+                    name: 'dribble',
+                    link: 'https://dribble.com',
+                }, {
+                    name: 'pinterest',
+                    link: 'https://pinterest.com'
+                }]
+            }}/>
         </div>
     );
 };
