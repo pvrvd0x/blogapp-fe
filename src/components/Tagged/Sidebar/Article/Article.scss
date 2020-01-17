@@ -1,0 +1,30 @@
+.tagged-sidebar-article {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  margin-bottom: 20px;
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  &__info {
+    margin-left: 15px;
+  }
+
+  &__tag {
+    color: tomato;
+    font-size: 18px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
