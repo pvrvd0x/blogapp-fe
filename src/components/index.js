@@ -5,3 +5,7 @@ export { default as LikeButton }            from './LikeBtn';
 export { default as IconLink }              from './IconLink';
 export { default as LoadMoreButtonLayout }  from './LoadMoreBtn';
 export { default as Tagged }                from './Tagged';
+export { default as Title }                 from './Title';
+export { default as TaggedList }            from './TaggedList';
+export { default as Footer }                from './Footer';
+export { default as Header }                from './Header';

@@ -1,7 +1,14 @@
 import React from 'react';
 import Masonry from 'react-masonry-component';
 
-import { SliderComponent, Article, Tagged } from 'components';
+import {
+    SliderComponent,
+    Article,
+    Tagged,
+    TaggedList,
+    Footer,
+    Header,
+} from 'components';
 import { LoadMoreButton } from 'containers';
 
 import './Home.scss';
@@ -15,6 +22,7 @@ const articles = Articles.articles;
 const Home = () => {
     return (
         <div className='home'>
+            <Header/>
             <SliderComponent slides={[{
                 image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80',
                 title: '10 Most Awesome Breathtaking Places',
@@ -52,6 +60,8 @@ const Home = () => {
                 <LoadMoreButton/>
             </section>
             <Tagged articles={articles.slice(0, 5)}/>
+            <TaggedList articles={articles.slice(0, 5)}/>
+            <Footer/>
         </div>
     );
 };

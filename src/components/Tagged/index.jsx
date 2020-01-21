@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './Title';
+import Title from '../Title';
 import MainArticle from './MainArticle';
 import Sidebar from './Sidebar';
 

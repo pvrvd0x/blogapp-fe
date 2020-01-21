@@ -1,4 +1,5 @@
 import React from 'react';
+import classname from 'classnames';
 
 import {
     Image,
@@ -10,14 +11,15 @@ import './Article.scss';
 
 
 const Article = ({
-    article
+    article,
+    classes,
 }) => {
     const [isLiked, setIsLiked] = React.useState(false);
 
     const handleLike = () => setIsLiked(!isLiked);
 
     return (
-        <div className='article'>
+        <div className={classname('article', classes)}>
             <div className='article-preview'>
                 <Image image={article.previewImage}/>
                 <LikeButton numOfLikes={12} handleClick={handleLike} classes={isLiked ? 'like--liked' : ''}/>

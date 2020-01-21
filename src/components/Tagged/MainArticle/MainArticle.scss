@@ -3,7 +3,8 @@
   position: relative;
 
   &-image {
-    max-height: 400px;
+    width: auto !important;
+    height: 400px;
 
     &__img {
       width: 100%;
@@ -19,7 +20,7 @@
   }
 
   &__like {
-    top: 35%;
+    top: 50%;
     $this: &;
 
     &--liked {
